@@ -16,9 +16,9 @@ const images = [
 const gallery = document.querySelector(".gallery");
 const img = [];
 
-images.forEach((element) => {
+images.map((element) => {
   img.push(
-    `<li><img src = ${element.url} alt = ${element.alt} width = 500 height = 350></img></li>`
+    `<li><img src = "${element.url}" alt = "${element.alt}" width = 500 height = 350></img></li>`
   );
 });
 
