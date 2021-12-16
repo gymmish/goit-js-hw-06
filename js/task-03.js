@@ -14,15 +14,15 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-const img = [];
 
-images.map((element) => {
-  img.push(
-    `<li><img src = "${element.url}" alt = "${element.alt}" width = 500 height = 350></img></li>`
-  );
-});
+const imageEl = images
+  .map(
+    (element) =>
+      `<li><img src = "${element.url}" alt = "${element.alt}" width = 500 height = 350></img></li>`
+  )
+  .join(" ");
 
-gallery.insertAdjacentHTML("afterBegin", img);
+gallery.insertAdjacentHTML("afterBegin", imageEl);
 
 gallery.style.display = "flex";
 gallery.style.alignSelf = "auto";
