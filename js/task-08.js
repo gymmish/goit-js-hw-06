@@ -8,7 +8,7 @@ function formSubmit(event) {
   const mail = formEl.email.value;
   const password = formEl.password.value;
   if (mail === "" || password === "") {
-    return alter("Все поля должны быть заполнены!");
+    return alert("Все поля должны быть заполнены!");
   }
   const formData = {
     mail,
