@@ -20,7 +20,7 @@ const imageEl = images
     (element) =>
       `<li><img src = "${element.url}" alt = "${element.alt}" width = 500 height = 350></img></li>`
   )
-  .join(" ");
+  .join(` `);
 
 gallery.insertAdjacentHTML("afterBegin", imageEl);
 
